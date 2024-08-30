@@ -70,6 +70,7 @@
 #include "eaton-pdu-nlogic-mib.h"
 #include "eaton-ups-pwnm2-mib.h"
 #include "eaton-ups-pxg-mib.h"
+#include "impuls-magnetic-mib.h"
 
 /* Address API change */
 #if (!NUT_HAVE_LIBNETSNMP_usmAESPrivProtocol) && (!defined usmAESPrivProtocol)
@@ -126,6 +127,7 @@ static mib2nut_info_t *mib2nut[] = {
 	&raritan,			  /* This struct comes from : raritan-pdu-mib.c */
 	&raritan_px2,		  /* This struct comes from : raritan-px2-mib.c */
 	&xppc,				  /* This struct comes from : xppc-mib.c */
+	&impuls_magnetic,	  /* This struct comes from : impuls_magnetic.c */
 	/*
 	 * Prepend vendor specific MIB mappings before IETF, so that
 	 * if a device supports both IETF and vendor specific MIB,
